@@ -1,0 +1,519 @@
+#Todos los snippets del estilo LATEX tienen que tener un duplicado con el simbolo \ escapeado
+'.source.tad':
+    '\\∨':
+      'prefix': '\\lor'
+      'body': '∨'
+    '\\∨L':
+      'prefix': '\\oLuego'
+      'body': '∨L'
+    '\\∧':
+      'prefix': '\\land'
+      'body': '∧'
+    '\\∧L':
+      'prefix': '\\yLuego'
+      'body': '∧L'
+    '\\¬':
+      'prefix': '\\not'
+      'body': '¬'
+    '\\∀':
+      'prefix': '\\forall'
+      'body': '∀'
+    '\\∃':
+      'prefix': '\\exists'
+      'body': '∃'
+    '\\∄':
+      'prefix': '\\notexists'
+      'body': '∄'
+    '\\⇒':
+      'prefix': '\\implies'
+      'body': '⇒'
+    '\\⇒L':
+      'prefix': '\\impluego'
+      'body': '⇒L'
+    '\\↔':
+      'prefix': '\\iff'
+      'body': '↔'
+    '\\⇐⇒':
+      'prefix': '\\iffalt'
+      'body': '⇐⇒'
+    '\\∴':
+      'prefix': '\\porlotanto'
+      'body': '∴'
+    '\\∩ (*)':
+      'prefix': '\\intersection'
+      'body': '∩'
+    '\\∪ (*)':
+      'prefix': '\\union'
+      'body': '∪'
+    '\\∩':
+      'prefix': '\\cap'
+      'body': '∩'
+    '\\∪':
+      'prefix': '\\cup'
+      'body': '∪'
+    '\\⊆':
+      'prefix': '\\subseteq'
+      'body': '⊆'
+    '\\⊂':
+      'prefix': '\\subset'
+      'body': '⊂'
+    '\\⊄':
+      'prefix': '\\notsubset'
+      'body': '⊄'
+    '\\∈':
+      'prefix': '\\in'
+      'body': '∈'
+    '\\∉':
+      'prefix': '\\notin'
+      'body': '∉'
+    '\\ℕ':
+      'prefix': '\\natural'
+      'body': 'ℕ'
+    '\\ℤ':
+      'prefix': '\\entero'
+      'body': 'ℤ'
+    '\\ℚ':
+      'prefix': '\\racional'
+      'body': 'ℚ'
+    '\\ℝ':
+      'prefix': '\\real'
+      'body': 'ℝ'
+    '\\ℂ':
+      'prefix': '\\complejo'
+      'body': 'ℂ'
+    '\\×':
+      'prefix': '\\cross'
+      'body': '×'
+    '\\∞':
+      'prefix': '\\infty'
+      'body': '∞'
+    '\\↦':
+      'prefix': '\\function'
+      'body': '↦'
+    '\\≡':
+      'prefix': '\\equiv'
+      'body': '≡'
+    '\\≠':
+      'prefix': '\\notequal'
+      'body': '≠'
+    '\\Ø':
+      'prefix': '\\emptyset'
+      'body': 'Ø'
+    '\\β':
+      'prefix': '\\beta'
+      'body': 'β'
+    '\\α':
+      'prefix': '\\alpha'
+      'body': 'α'
+    '\\•':
+      'prefix': '\\dot'
+      'body': '•'
+    '\\◦':
+      'prefix': '\\emptydot'
+      'body': '◦'
+    '\\π':
+      'prefix': '\\pi'
+      'body': 'π'
+    '\\←':
+      'prefix': '\\gets'
+      'body': '←'
+    '\\←alt':
+      'prefix': '\\ig'
+      'body': '←'
+    '\\→':
+      'prefix': '\\rarrow'
+      'body': '→'
+    '\\≤':
+      'prefix': '\\leq'
+      'body': '≤'
+    '\\≥':
+      'prefix': '\\geq'
+      'body': '≥'
+    '\\κ':
+      'prefix': '\\kappa'
+      'body': 'κ'
+    '\\σ':
+      'prefix': '\\sigma'
+      'body': 'σ'
+    '\\⟨\\⟩':
+      'prefix': '\\tupla'
+      'body': '⟨$1⟩'
+    '\\Ω':
+      'prefix': '\\omega'
+      'body': 'Ω'
+    '\\ω':
+      'prefix': '\\omega_2'
+      'body': 'ω'
+    '\\Θ':
+      'prefix': '\\theta'
+      'body': 'Θ'
+    '∨':
+      'prefix': 'lor'
+      'body': '∨'
+    '∨L':
+      'prefix': 'oLuego'
+      'body': '∨L'
+    '∧':
+      'prefix': 'land'
+      'body': '∧'
+    '∧L':
+      'prefix': 'yLuego'
+      'body': '∧L'
+    '¬':
+      'prefix': 'not'
+      'body': '¬'
+    '∀':
+      'prefix': 'forall'
+      'body': '∀'
+    '∃':
+      'prefix': 'exists'
+      'body': '∃'
+    '∄':
+      'prefix': 'notexists'
+      'body': '∄'
+    '⇒':
+      'prefix': 'implies'
+      'body': '⇒'
+    '⇒L':
+      'prefix': 'impluego'
+      'body': '⇒L'
+    '↔':
+      'prefix': 'iff'
+      'body': '↔'
+    '⇐⇒':
+      'prefix': 'iffalt'
+      'body': '⇐⇒'
+    '∴':
+      'prefix': 'porlotanto'
+      'body': '∴'
+    '∩ (*)':
+      'prefix': 'intersection'
+      'body': '∩'
+    '∪ (*)':
+      'prefix': 'union'
+      'body': '∪'
+    '∩':
+      'prefix': 'cap'
+      'body': '∩'
+    '∪':
+      'prefix': 'cup'
+      'body': '∪'
+    '⊆':
+      'prefix': 'subseteq'
+      'body': '⊆'
+    '⊂':
+      'prefix': 'subset'
+      'body': '⊂'
+    '⊄':
+      'prefix': 'notsubset'
+      'body': '⊄'
+    '∈':
+      'prefix': 'in'
+      'body': '∈'
+    '∉':
+      'prefix': 'notin'
+      'body': '∉'
+    'ℕ':
+      'prefix': 'natural'
+      'body': 'ℕ'
+    'ℤ':
+      'prefix': 'entero'
+      'body': 'ℤ'
+    'ℚ':
+      'prefix': 'racional'
+      'body': 'ℚ'
+    'ℝ':
+      'prefix': 'real'
+      'body': 'ℝ'
+    'ℂ':
+      'prefix': 'complejo'
+      'body': 'ℂ'
+    '×':
+      'prefix': 'cross'
+      'body': '×'
+    '∞':
+      'prefix': 'infty'
+      'body': '∞'
+    '↦':
+      'prefix': 'function'
+      'body': '↦'
+    '≡':
+      'prefix': 'equiv'
+      'body': '≡'
+    '≠':
+      'prefix': 'notequal'
+      'body': '≠'
+    'Ø':
+      'prefix': 'emptyset'
+      'body': 'Ø'
+    'β':
+      'prefix': 'beta'
+      'body': 'β'
+    'α':
+      'prefix': 'alpha'
+      'body': 'α'
+    '•':
+      'prefix': 'dot'
+      'body': '•'
+    '◦':
+      'prefix': 'emptydot'
+      'body': '◦'
+    'π':
+      'prefix': 'pi'
+      'body': 'π'
+    '←':
+      'prefix': 'gets'
+      'body': '←'
+    '←alt':
+      'prefix': 'ig'
+      'body': '←'
+    '→':
+      'prefix': 'rarrow'
+      'body': '→'
+    '≤':
+      'prefix': 'leq'
+      'body': '≤'
+    '≥':
+      'prefix': 'geq'
+      'body': '≥'
+    'κ':
+      'prefix': 'kappa'
+      'body': 'κ'
+    'σ':
+      'prefix': 'sigma'
+      'body': 'σ'
+    '⟨⟩':
+      'prefix': 'tupla'
+      'body': '⟨$1⟩'
+    'Ω':
+      'prefix': 'omega'
+      'body': 'Ω'
+    'ω':
+      'prefix': 'omega_2'
+      'body': 'ω'
+    'Θ':
+      'prefix': 'theta'
+      'body': 'Θ'
+    '\<\-':
+      'prefix': '\<\-'
+      'body': '←'
+#--------------------------------------------------------------- 
+#--------------------------------------------------------------- 
+#--------------------------------------------------------------- 
+    'if Condition':
+      'prefix': 'if'
+      'body': 'if ${1:condicion} then\n\t${2:resultado}\nelse\n\t${3:sino}\nfi'
+    'if Condition inline':
+      'prefix': 'ifthen'
+      'body': 'if ${1:condicion} then ${2:resultado} else ${3:sino} fi'
+    'esqueletoTad':
+      'prefix': 'esqueletoTad'
+      'body': """
+TAD ${1:NombreTad}
+	Igualdad Observacional:();
+	Géneros: ${2:nombreTad}
+	Exporta: ${2:nombreTad}, observadores, generadores, 
+	Usa: ${3:Bool, Nat}
+	
+	Observadores Básicos:
+		${4:obs?:	nombreTad t × nat n	-> bool 	\{ n ≥ 1 \\}}
+	Generadores:
+		${5:nil:			-> nombreTad}
+	Otras Operaciones:
+		${6:otra:	nombreTad t × nat n	-> bool 	\{ n ≥ 1 \\}}
+	Axiomas:
+		${7:obs?(nil)	= 	true
+		otra(t, n)	= 	n
+		...}
+Fin TAD
+		"""
+    '\\₀ (subindex)':
+      'prefix': '\\0'
+      'body': '₀'
+    '₀ (subindex)':
+      'prefix': '0'
+      'body': '₀'
+    '\\₁ (subindex)':
+      'prefix': '\\1'
+      'body': '₁'
+    '₁ (subindex)':
+      'prefix': '1'
+      'body': '₁'
+    '\\₂ (subindex)':
+      'prefix': '\\2'
+      'body': '₂'
+    '₂ (subindex)':
+      'prefix': '2'
+      'body': '₂'
+    '\\₃ (subindex)':
+      'prefix': '\\3'
+      'body': '₃'
+    '₃ (subindex)':
+      'prefix': '3'
+      'body': '₃'
+    '\\₄ (subindex)':
+      'prefix': '\\4'
+      'body': '₄'
+    '₄ (subindex)':
+      'prefix': '4'
+      'body': '₄'
+    '\\₅ (subindex)':
+      'prefix': '\\5'
+      'body': '₅'
+    '₅ (subindex)':
+      'prefix': '5'
+      'body': '₅'
+    '\\₆ (subindex)':
+      'prefix': '\\6'
+      'body': '₆'
+    '₆ (subindex)':
+      'prefix': '6'
+      'body': '₆'
+    '\\₇ (subindex)':
+      'prefix': '\\7'
+      'body': '₇'
+    '₇ (subindex)':
+      'prefix': '7'
+      'body': '₇'
+    '\\₈ (subindex)':
+      'prefix': '\\8'
+      'body': '₈'
+    '₈ (subindex)':
+      'prefix': '8'
+      'body': '₈'
+    '\\₉ (subindex)':
+      'prefix': '\\9'
+      'body': '₉'
+    '₉ (subindex)':
+      'prefix': '9'
+      'body': '₉'
+    'Observadores Basicos':
+      'prefix': 'Observadores basicos'
+      'body': 'Observadores Básicos:\n\t$1'
+    'Géneros':
+      'prefix': 'Generos'
+      'body': 'Géneros:\t$1'
+    'IgObs model':
+      'prefix': 'igobs'
+      'body': '''Igualdad Observacional:\t(∀${1:x}₀,${1:x}₁: ${2:tipo})
+      \t\t\t\t\t\t(${1:x}₀ =obs ${1:x}₁ ⇐⇒
+			\t\t\t\t\t\t\t\t( 
+			\t\t\t\t\t\t\t\t\t$3
+			\t\t\t\t\t\t\t\t)
+			\t\t\t\t\t\t\t);
+      '''
+    'Igualdad Observacional':
+      'prefix': 'Igualdad observacional'
+      'body': 'Igualdad Observacional:\t($1);'
+    'Generadores':
+      'prefix': 'Generadores'
+      'body': 'Generadores:\n\t$1'
+    'Otras Operaciones':
+      'prefix': 'Otras operaciones'
+      'body': 'Otras Operaciones:\n\t$1'
+    'Axiomas:':
+      'prefix': 'Axiomas'
+      'body': 'Axiomas:\n\t$1\nFin TAD'
+    'ConjVacio?':
+      'prefix': 'conjvacio'
+      'body': 'Ø?($1)'
+    'dameUno':
+      'prefix': 'dameUno'
+      'body': 'dameUno($1)'
+    'sinUno':
+      'prefix': 'sinUno'
+      'body': 'sinUno($1)'
+    'está?':
+      'prefix': 'esta?'
+      'body': 'está?($1)'
+    'vacía?':
+      'prefix': 'vacia?'
+      'body': 'vacía?($1)'
+    'prim':
+      'prefix': 'prim'
+      'body': 'prim($1)'
+    'fin':
+      'prefix': 'fin'
+      'body': 'fin($1)'
+    'nil?':
+      'prefix': 'nil?'
+      'body': 'nil?($1)'
+    'definido?':
+      'prefix': 'definido?'
+      'body': 'definido?($1)'
+    'esHoja?':
+      'prefix': 'esHoja?'
+      'body': 'esHoja?($1)'
+    'def?':
+      'prefix': 'def?'
+      'body': 'def?($1)'
+    'obtener':
+      'prefix': 'obtener'
+      'body': 'obtener($1)'
+    'claves':
+      'prefix': 'claves'
+      'body': 'claves($1)'
+    'While do (diseño)':
+      'prefix': 'while'
+      'body': 'while ${1:condicion} do\n\t${2:resultado}\nend while'
+    'For Loop (diseño)':
+      'prefix': 'forloop'
+      'body': 'for ${1:i} ← 0, ${1:i} < ${2:count}, ${1:i}${3:++}\n\t${4:// code }\nend for'
+    'Switch (diseño)':
+      'prefix': 'switch'
+      'body': 'switch ${1:variable} \n\tcase ${2:valor}:\nend switch'
+    'Nueva Interfaz (diseño)':
+      'prefix': 'nueva interfaz'
+      'body': '''
+Representación:
+	${1:tipoDato} se representa con estr donde 
+		estr es tupla ⟨	${2:arg₀:	nat,
+						arg₁: 	puntero(nat)} ⟩
+
+Solución Informal:
+	${3:- e.arg₀ + 1 debe ser ...
+	- si e.arg₁ ...}
+---
+Invariante de Representación:
+	Rep:	estr	->	boolean
+	(∀e: estr) Rep(e)	≡ true ⇐⇒ (1)∧(2)
+		donde: 
+		(1)	≡	${4:e.arg₀ > ...
+		(2)	≡	(∀n: nat)(e.arg₁ < ...)}
+---
+Función de abstracción:
+	Abs:	estr	->	${1:tipoDato}	{Rep(e)}
+	(∀e: estr) Abs(e) =obs td: ${1:tipoDato} | (1)∧(2)
+		donde: 
+		(1)	≡	${5:obs₁(td) = ...
+		(2)	≡	obs₂(td) = ...}
+---
+Interfaz:
+	Parámetros formales:
+		Géneros:	α
+		Función:
+			${7:Copiar(in a:α) -> res: α
+			Pre ≡ {true\\}
+			Post ≡ {res = a\\} 
+			Complejidad: Θ(copy(a))
+			Descripción: Función copia de α's.}
+			---
+	Se explica con:	${6:TipoDato}
+	Géneros:		${1:tipoDato}
+	
+	Operaciones básicas:
+		${8:NuevaOp(in n: nat)	-> res: tipoDato
+		Pre ≡ {true\\}
+		Post ≡ {res =obs ...\\}
+		Complejidad: Θ(1)
+		Descripción: Genera ...
+		Aliasing: No presenta aspectos de aliasing.}
+		---		
+	Algoritmos del módulo:
+		${9:iNuevaOp(in n: nat) -> res: estr
+			res ← ⟨0, 9⟩	// Ejemplo}
+		---
+'''
+    'Function (diseño)':
+      'prefix': 'function'
+      'body': 'function ${1:NuevaOP}(${2:param}) \n\t${3:// code}\nend function'

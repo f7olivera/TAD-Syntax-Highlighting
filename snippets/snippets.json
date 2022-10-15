@@ -1,0 +1,737 @@
+{
+  "\\∨": {
+    "prefix": "\\lor",
+    "body": "∨",
+    "description": "\\∨"
+  },
+  "\\∨L": {
+    "prefix": "\\oLuego",
+    "body": "∨L",
+    "description": "\\∨L"
+  },
+  "\\∧": {
+    "prefix": "\\land",
+    "body": "∧",
+    "description": "\\∧"
+  },
+  "\\∧L": {
+    "prefix": "\\yLuego",
+    "body": "∧L",
+    "description": "\\∧L"
+  },
+  "\\¬": {
+    "prefix": "\\not",
+    "body": "¬",
+    "description": "\\¬"
+  },
+  "\\∀": {
+    "prefix": "\\forall",
+    "body": "∀",
+    "description": "\\∀"
+  },
+  "\\∃": {
+    "prefix": "\\exists",
+    "body": "∃",
+    "description": "\\∃"
+  },
+  "\\∄": {
+    "prefix": "\\notexists",
+    "body": "∄",
+    "description": "\\∄"
+  },
+  "\\⇒": {
+    "prefix": "\\implies",
+    "body": "⇒",
+    "description": "\\⇒"
+  },
+  "\\⇒L": {
+    "prefix": "\\impluego",
+    "body": "⇒L",
+    "description": "\\⇒L"
+  },
+  "\\↔": {
+    "prefix": "\\iff",
+    "body": "↔",
+    "description": "\\↔"
+  },
+  "\\⟷": {
+    "prefix": "\\iffalt",
+    "body": "⟷",
+    "description": "\\⟷"
+  },
+  "\\∴": {
+    "prefix": "\\porlotanto",
+    "body": "∴",
+    "description": "\\∴"
+  },
+  "\\∩ (*)": {
+    "prefix": "\\intersection",
+    "body": "∩",
+    "description": "\\∩ (*)"
+  },
+  "\\∪ (*)": {
+    "prefix": "\\union",
+    "body": "∪",
+    "description": "\\∪ (*)"
+  },
+  "\\∩": {
+    "prefix": "\\cap",
+    "body": "∩",
+    "description": "\\∩"
+  },
+  "\\∪": {
+    "prefix": "\\cup",
+    "body": "∪",
+    "description": "\\∪"
+  },
+  "\\⊆": {
+    "prefix": "\\subseteq",
+    "body": "⊆",
+    "description": "\\⊆"
+  },
+  "\\⊂": {
+    "prefix": "\\subset",
+    "body": "⊂",
+    "description": "\\⊂"
+  },
+  "\\⊄": {
+    "prefix": "\\notsubset",
+    "body": "⊄",
+    "description": "\\⊄"
+  },
+  "\\∈": {
+    "prefix": "\\in",
+    "body": "∈",
+    "description": "\\∈"
+  },
+  "\\∉": {
+    "prefix": "\\notin",
+    "body": "∉",
+    "description": "\\∉"
+  },
+  "\\ℕ": {
+    "prefix": "\\natural",
+    "body": "ℕ",
+    "description": "\\ℕ"
+  },
+  "\\ℤ": {
+    "prefix": "\\entero",
+    "body": "ℤ",
+    "description": "\\ℤ"
+  },
+  "\\ℚ": {
+    "prefix": "\\racional",
+    "body": "ℚ",
+    "description": "\\ℚ"
+  },
+  "\\ℝ": {
+    "prefix": "\\real",
+    "body": "ℝ",
+    "description": "\\ℝ"
+  },
+  "\\ℂ": {
+    "prefix": "\\complejo",
+    "body": "ℂ",
+    "description": "\\ℂ"
+  },
+  "\\×": {
+    "prefix": "\\cross",
+    "body": "×",
+    "description": "\\×"
+  },
+  "\\∞": {
+    "prefix": "\\infty",
+    "body": "∞",
+    "description": "\\∞"
+  },
+  "\\↦": {
+    "prefix": "\\function",
+    "body": "↦",
+    "description": "\\↦"
+  },
+  "\\≡": {
+    "prefix": "\\equiv",
+    "body": "≡",
+    "description": "\\≡"
+  },
+  "\\≠": {
+    "prefix": "\\notequal",
+    "body": "≠",
+    "description": "\\≠"
+  },
+  "\\Ø": {
+    "prefix": "\\emptyset",
+    "body": "Ø",
+    "description": "\\Ø"
+  },
+  "\\β": {
+    "prefix": "\\beta",
+    "body": "β",
+    "description": "\\β"
+  },
+  "\\α": {
+    "prefix": "\\alpha",
+    "body": "α",
+    "description": "\\α"
+  },
+  "\\•": {
+    "prefix": "\\dot",
+    "body": "•",
+    "description": "\\•"
+  },
+  "\\◦": {
+    "prefix": "\\emptydot",
+    "body": "◦",
+    "description": "\\◦"
+  },
+  "\\π": {
+    "prefix": "\\pi",
+    "body": "π",
+    "description": "\\π"
+  },
+  "\\⟵": {
+    "prefix": "\\gets",
+    "body": "⟵",
+    "description": "\\⟵"
+  },
+  "\\⟵alt": {
+    "prefix": "\\ig",
+    "body": "⟵",
+    "description": "\\⟵alt"
+  },
+  "\\→": {
+    "prefix": "\\rarrow",
+    "body": "⟶",
+    "description": "\\→"
+  },
+  "\\≤": {
+    "prefix": "\\leq",
+    "body": "≤",
+    "description": "\\≤"
+  },
+  "\\≥": {
+    "prefix": "\\geq",
+    "body": "≥",
+    "description": "\\≥"
+  },
+  "\\κ": {
+    "prefix": "\\kappa",
+    "body": "κ",
+    "description": "\\κ"
+  },
+  "\\σ": {
+    "prefix": "\\sigma",
+    "body": "σ",
+    "description": "\\σ"
+  },
+  "\\⟨\\⟩": {
+    "prefix": "\\tupla",
+    "body": "⟨$1⟩",
+    "description": "\\⟨\\⟩"
+  },
+  "\\Ω": {
+    "prefix": "\\omega",
+    "body": "Ω",
+    "description": "\\Ω"
+  },
+  "\\ω": {
+    "prefix": "\\omega_2",
+    "body": "ω",
+    "description": "\\ω"
+  },
+  "\\Θ": {
+    "prefix": "\\theta",
+    "body": "Θ",
+    "description": "\\Θ"
+  },
+  "∨": {
+    "prefix": "lor",
+    "body": "∨",
+    "description": "∨"
+  },
+  "∨L": {
+    "prefix": "oLuego",
+    "body": "∨L",
+    "description": "∨L"
+  },
+  "∧": {
+    "prefix": "land",
+    "body": "∧",
+    "description": "∧"
+  },
+  "∧L": {
+    "prefix": "yLuego",
+    "body": "∧L",
+    "description": "∧L"
+  },
+  "¬": {
+    "prefix": "not",
+    "body": "¬",
+    "description": "¬"
+  },
+  "∀": {
+    "prefix": "forall",
+    "body": "∀",
+    "description": "∀"
+  },
+  "∃": {
+    "prefix": "exists",
+    "body": "∃",
+    "description": "∃"
+  },
+  "∄": {
+    "prefix": "notexists",
+    "body": "∄",
+    "description": "∄"
+  },
+  "⇒": {
+    "prefix": "implies",
+    "body": "⇒",
+    "description": "⇒"
+  },
+  "⇒L": {
+    "prefix": "impluego",
+    "body": "⇒L",
+    "description": "⇒L"
+  },
+  "↔": {
+    "prefix": "iff",
+    "body": "↔",
+    "description": "↔"
+  },
+  "⟷": {
+    "prefix": "iffalt",
+    "body": "⟷",
+    "description": "⟷"
+  },
+  "∴": {
+    "prefix": "porlotanto",
+    "body": "∴",
+    "description": "∴"
+  },
+  "∩ (*)": {
+    "prefix": "intersection",
+    "body": "∩",
+    "description": "∩ (*)"
+  },
+  "∪ (*)": {
+    "prefix": "union",
+    "body": "∪",
+    "description": "∪ (*)"
+  },
+  "∩": {
+    "prefix": "cap",
+    "body": "∩",
+    "description": "∩"
+  },
+  "∪": {
+    "prefix": "cup",
+    "body": "∪",
+    "description": "∪"
+  },
+  "⊆": {
+    "prefix": "subseteq",
+    "body": "⊆",
+    "description": "⊆"
+  },
+  "⊂": {
+    "prefix": "subset",
+    "body": "⊂",
+    "description": "⊂"
+  },
+  "⊄": {
+    "prefix": "notsubset",
+    "body": "⊄",
+    "description": "⊄"
+  },
+  "∈": {
+    "prefix": "in",
+    "body": "∈",
+    "description": "∈"
+  },
+  "∉": {
+    "prefix": "notin",
+    "body": "∉",
+    "description": "∉"
+  },
+  "ℕ": {
+    "prefix": "natural",
+    "body": "ℕ",
+    "description": "ℕ"
+  },
+  "ℤ": {
+    "prefix": "entero",
+    "body": "ℤ",
+    "description": "ℤ"
+  },
+  "ℚ": {
+    "prefix": "racional",
+    "body": "ℚ",
+    "description": "ℚ"
+  },
+  "ℝ": {
+    "prefix": "real",
+    "body": "ℝ",
+    "description": "ℝ"
+  },
+  "ℂ": {
+    "prefix": "complejo",
+    "body": "ℂ",
+    "description": "ℂ"
+  },
+  "×": {
+    "prefix": "cross",
+    "body": "×",
+    "description": "×"
+  },
+  "∞": {
+    "prefix": "infty",
+    "body": "∞",
+    "description": "∞"
+  },
+  "↦": {
+    "prefix": "function",
+    "body": "↦",
+    "description": "↦"
+  },
+  "≡": {
+    "prefix": "equiv",
+    "body": "≡",
+    "description": "≡"
+  },
+  "≠": {
+    "prefix": "notequal",
+    "body": "≠",
+    "description": "≠"
+  },
+  "Ø": {
+    "prefix": "emptyset",
+    "body": "Ø",
+    "description": "Ø"
+  },
+  "β": {
+    "prefix": "beta",
+    "body": "β",
+    "description": "β"
+  },
+  "α": {
+    "prefix": "alpha",
+    "body": "α",
+    "description": "α"
+  },
+  "•": {
+    "prefix": "dot",
+    "body": "•",
+    "description": "•"
+  },
+  "◦": {
+    "prefix": "emptydot",
+    "body": "◦",
+    "description": "◦"
+  },
+  "π": {
+    "prefix": "pi",
+    "body": "π",
+    "description": "π"
+  },
+  "⟵": {
+    "prefix": "gets",
+    "body": "⟵",
+    "description": "⟵"
+  },
+  "⟵alt": {
+    "prefix": "ig",
+    "body": "⟵",
+    "description": "⟵alt"
+  },
+  "→": {
+    "prefix": "rarrow",
+    "body": "⟶",
+    "description": "→"
+  },
+  "≤": {
+    "prefix": "leq",
+    "body": "≤",
+    "description": "≤"
+  },
+  "≥": {
+    "prefix": "geq",
+    "body": "≥",
+    "description": "≥"
+  },
+  "κ": {
+    "prefix": "kappa",
+    "body": "κ",
+    "description": "κ"
+  },
+  "σ": {
+    "prefix": "sigma",
+    "body": "σ",
+    "description": "σ"
+  },
+  "⟨⟩": {
+    "prefix": "tupla",
+    "body": "⟨$1⟩",
+    "description": "⟨⟩"
+  },
+  "Ω": {
+    "prefix": "omega",
+    "body": "Ω",
+    "description": "Ω"
+  },
+  "ω": {
+    "prefix": "omega_2",
+    "body": "ω",
+    "description": "ω"
+  },
+  "Θ": {
+    "prefix": "theta",
+    "body": "Θ",
+    "description": "Θ"
+  },
+  "<-": {
+    "prefix": "<-",
+    "body": "⟵",
+    "description": "<-"
+  },
+  "if Condition": {
+    "prefix": "if",
+    "body": "if ${1:condicion} then\n    ${2:resultado}\nelse\n    ${3:sino}\nfi",
+    "description": "if Condition"
+  },
+  "if Condition inline": {
+    "prefix": "ifthen",
+    "body": "if ${1:condicion} then ${2:resultado} else ${3:sino} fi",
+    "description": "if Condition inline"
+  },
+  "esqueletoTad": {
+    "prefix": "esqueletoTad",
+    "body": "TAD ${1:NombreTad}\n    Igualdad Observacional:();\n    Géneros: ${2:nombreTad}\n    Exporta: ${2:nombreTad}, observadores, generadores,\n    Usa: ${3:Bool, Nat}\n\n    Observadores Básicos:\n    ${4:obs?:    nombreTad t × nat n    ⟶ bool  \\{ n ≥ 1 \\}}\n    Generadores:\n    ${5:nil:            ⟶ nombreTad}\n    Otras Operaciones:\n    ${6:otra:    nombreTad t × nat n    ⟶ bool  \\{ n ≥ 1 \\}}\n    Axiomas:\n    ${7:obs?(nil) = true\n    otra(t, n) = n\n    ...}\nFin TAD",
+    "description": "esqueletoTad"
+  },
+  "\\₀ (subindex)": {
+    "prefix": "\\0",
+    "body": "₀",
+    "description": "\\₀ (subindex)"
+  },
+  "₀ (subindex)": {
+    "prefix": "0",
+    "body": "₀",
+    "description": "₀ (subindex)"
+  },
+  "\\₁ (subindex)": {
+    "prefix": "\\1",
+    "body": "₁",
+    "description": "\\₁ (subindex)"
+  },
+  "₁ (subindex)": {
+    "prefix": "1",
+    "body": "₁",
+    "description": "₁ (subindex)"
+  },
+  "\\₂ (subindex)": {
+    "prefix": "\\2",
+    "body": "₂",
+    "description": "\\₂ (subindex)"
+  },
+  "₂ (subindex)": {
+    "prefix": "2",
+    "body": "₂",
+    "description": "₂ (subindex)"
+  },
+  "\\₃ (subindex)": {
+    "prefix": "\\3",
+    "body": "₃",
+    "description": "\\₃ (subindex)"
+  },
+  "₃ (subindex)": {
+    "prefix": "3",
+    "body": "₃",
+    "description": "₃ (subindex)"
+  },
+  "\\₄ (subindex)": {
+    "prefix": "\\4",
+    "body": "₄",
+    "description": "\\₄ (subindex)"
+  },
+  "₄ (subindex)": {
+    "prefix": "4",
+    "body": "₄",
+    "description": "₄ (subindex)"
+  },
+  "\\₅ (subindex)": {
+    "prefix": "\\5",
+    "body": "₅",
+    "description": "\\₅ (subindex)"
+  },
+  "₅ (subindex)": {
+    "prefix": "5",
+    "body": "₅",
+    "description": "₅ (subindex)"
+  },
+  "\\₆ (subindex)": {
+    "prefix": "\\6",
+    "body": "₆",
+    "description": "\\₆ (subindex)"
+  },
+  "₆ (subindex)": {
+    "prefix": "6",
+    "body": "₆",
+    "description": "₆ (subindex)"
+  },
+  "\\₇ (subindex)": {
+    "prefix": "\\7",
+    "body": "₇",
+    "description": "\\₇ (subindex)"
+  },
+  "₇ (subindex)": {
+    "prefix": "7",
+    "body": "₇",
+    "description": "₇ (subindex)"
+  },
+  "\\₈ (subindex)": {
+    "prefix": "\\8",
+    "body": "₈",
+    "description": "\\₈ (subindex)"
+  },
+  "₈ (subindex)": {
+    "prefix": "8",
+    "body": "₈",
+    "description": "₈ (subindex)"
+  },
+  "\\₉ (subindex)": {
+    "prefix": "\\9",
+    "body": "₉",
+    "description": "\\₉ (subindex)"
+  },
+  "₉ (subindex)": {
+    "prefix": "9",
+    "body": "₉",
+    "description": "₉ (subindex)"
+  },
+  "Observadores Basicos": {
+    "prefix": "Observadores basicos",
+    "body": "Observadores Básicos:\n\t$1",
+    "description": "Observadores Basicos"
+  },
+  "Géneros": {
+    "prefix": "Generos",
+    "body": "Géneros:\t$1",
+    "description": "Géneros"
+  },
+  "IgObs model": {
+    "prefix": "igobs",
+    "body": "Igualdad Observacional:\t(∀${1:x}₀,${1:x}₁: ${2:tipo})\n  \t\t\t\t\t\t(${1:x}₀ =obs ${1:x}₁ ⟷\n\t\t\t\t\t\t\t\t(\n\t\t\t\t\t\t\t\t\t$3\n\t\t\t\t\t\t\t\t)\n\t\t\t\t\t\t\t);",
+    "description": "IgObs model"
+  },
+  "Igualdad Observacional": {
+    "prefix": "Igualdad observacional",
+    "body": "Igualdad Observacional:\t($1);",
+    "description": "Igualdad Observacional"
+  },
+  "Generadores": {
+    "prefix": "Generadores",
+    "body": "Generadores:\n\t$1",
+    "description": "Generadores"
+  },
+  "Otras Operaciones": {
+    "prefix": "Otras operaciones",
+    "body": "Otras Operaciones:\n\t$1",
+    "description": "Otras Operaciones"
+  },
+  "Axiomas:": {
+    "prefix": "Axiomas",
+    "body": "Axiomas:\n\t$1\nFin TAD",
+    "description": "Axiomas:"
+  },
+  "ConjVacio?": {
+    "prefix": "conjvacio",
+    "body": "Ø?($1)",
+    "description": "ConjVacio?"
+  },
+  "dameUno": {
+    "prefix": "dameUno",
+    "body": "dameUno($1)",
+    "description": "dameUno"
+  },
+  "sinUno": {
+    "prefix": "sinUno",
+    "body": "sinUno($1)",
+    "description": "sinUno"
+  },
+  "está?": {
+    "prefix": "esta?",
+    "body": "está?($1)",
+    "description": "está?"
+  },
+  "vacía?": {
+    "prefix": "vacia?",
+    "body": "vacía?($1)",
+    "description": "vacía?"
+  },
+  "prim": {
+    "prefix": "prim",
+    "body": "prim($1)",
+    "description": "prim"
+  },
+  "fin": {
+    "prefix": "fin",
+    "body": "fin($1)",
+    "description": "fin"
+  },
+  "nil?": {
+    "prefix": "nil?",
+    "body": "nil?($1)",
+    "description": "nil?"
+  },
+  "definido?": {
+    "prefix": "definido?",
+    "body": "definido?($1)",
+    "description": "definido?"
+  },
+  "esHoja?": {
+    "prefix": "esHoja?",
+    "body": "esHoja?($1)",
+    "description": "esHoja?"
+  },
+  "def?": {
+    "prefix": "def?",
+    "body": "def?($1)",
+    "description": "def?"
+  },
+  "obtener": {
+    "prefix": "obtener",
+    "body": "obtener($1)",
+    "description": "obtener"
+  },
+  "claves": {
+    "prefix": "claves",
+    "body": "claves($1)",
+    "description": "claves"
+  },
+  "While do (diseño)": {
+    "prefix": "while",
+    "body": "while ${1:condicion} do\n    ${2:resultado}\nendwhile",
+    "description": "While do (diseño)"
+  },
+  "For Loop (diseño)": {
+    "prefix": "forloop",
+    "body": "for ${1:i} ⟵ 0, ${1:i} < ${2:count}, ${1:i}${3:++}\n    ${4:// code }\nend for",
+    "description": "For Loop (diseño)"
+  },
+  "Switch (diseño)": {
+    "prefix": "switch",
+    "body": "switch ${1:variable} \n    case ${2:valor}:\nend switch",
+    "description": "Switch (diseño)"
+  },
+  "Nueva Interfaz (diseño)": {
+    "prefix": "nueva interfaz",
+    "body": "Representación:\n    ${1:tipoDato} se representa con estr donde\n    estr es tupla ⟨ ${2:arg₀: nat,\n                    arg₁: puntero(nat)} ⟩\n---\nSolución Informal:\n    ${3:1) e.arg₀ + 1 debe ser ...\n    2) si e.arg₁ ...}\n---\nInvariante de Representación:\n    Rep: estr ⟶ boolean\n    (∀ e: estr) Rep(e) ≡ true ⟷ (1) ∧ (2)\n    donde:\n    (1) ≡ ${4:e.arg₀ > ...\n    (2) ≡ (∀ n: nat) (e.arg₁ < ...)}\n---\nFunción de abstracción:\n    Abs: estr e ⟶ ${1:tipoDato}        {Rep(e)}\n    (∀ e: estr) Abs(e) =obs td: ${1:tipoDato} | (1) ∧ (2)\n    donde:\n    (1) ≡\n    (2) ≡\n---\nInterfaz:\n    Parámetros formales:\n    Géneros: α\n    Función:\n    ${7:Copiar(in a:α) ⟶ res: α\n    Pre ≡ {true\\}\n    Post ≡ {res = a\\}\n    Complejidad: Θ(copy(a))\n    Descripción: Función copia de α's.}\n    ---\n    Se explica con: ${6:TipoDato}\n    Géneros:        ${1:tipoDato}\n\n    Operaciones básicas:\n    ${8:NuevaOp(in n: nat) ⟶ res: tipoDato\n    Pre  ≡ {true\\}\n    Post ≡ {res =obs ...\\}\n    Complejidad: Θ(1)\n    Descripción: Genera ...\n    Aliasing: No presenta aspectos de aliasing.}\n    ---\n    Algoritmos del módulo:\n    ${9:iNuevaOp(in n: nat) ⟶ res: estr\n        res ⟵ ⟨0, 9⟩}\n    ---",
+    "description": "Nueva Interfaz (diseño)"
+  },
+  "Function (diseño)": {
+    "prefix": "function",
+    "body": "function ${1:NuevaOP}(${2:param}) \n    ${3:// code}\nend function",
+    "description": "Function (diseño)"
+  }
+}

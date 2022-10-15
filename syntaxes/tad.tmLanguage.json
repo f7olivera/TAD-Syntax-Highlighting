@@ -1,0 +1,1019 @@
+{
+    "scopeName": "source.tad",
+    "name": "TAD",
+    "fileTypes": [
+      "tad"
+    ],
+    "limitLineLength": false,
+    "patterns": [
+      {
+        "include": "#comment"
+      },
+      {
+        "include": "#strings"
+      },
+      {
+        "include": "#constants"
+      },
+      {
+        "include": "#constants_aux"
+      },
+      {
+        "include": "#arrays"
+      },
+      {
+        "comment": "Declaraciones de TADs auxiliares",
+        "match": "((?:w*TAD*?))( .*? )(es)( .*?(?=( |\n|<|\\(|{)))",
+        "captures": {
+          "1": {
+            "name": "markup.bold.tad"
+          },
+          "2": {
+            "name": "variable.other.tad"
+          },
+          "3": {
+            "name": "markup.bold.tad"
+          },
+          "4": {
+            "name": "storage.modifier.tad"
+          }
+        }
+      },
+      {
+        "comment": "Highligting para Tupla<...> en declaraciones",
+        "name": "meta.angle-brackets",
+        "begin": "<|\\(",
+        "end": ">|\\)",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.section.parens.begin.tad"
+          }
+        },
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.section.parens.end.tad"
+          }
+        },
+        "patterns": [
+          {
+            "match": "[A-Z].*?( |(?=\\)))",
+            "name": "storage.modifier.tad"
+          }
+        ]
+      },
+      {
+        "comment": "Declaracion de TAD principal",
+        "match": "((?:w*TAD*?))( .*?\\((.*?(?=\\))).*?\\)| .*?\n)",
+        "captures": {
+          "1": {
+            "name": "markup.bold.tad"
+          },
+          "2": {
+            "name": "variable.other.tad"
+          },
+          "3": {
+            "name": "storage.modifier.tad"
+          }
+        }
+      },
+      {
+        "comment": "Seccion Extiende del header",
+        "match": "(?i)(w*(EXTIENDE)( |:|\t|\n))( .*?\\((.*?(?=\\))).*?\\))",
+        "captures": {
+          "1": {
+            "name": "markup.bold.tad"
+          },
+          "4": {
+            "name": "variable.other.tad"
+          },
+          "5": {
+            "name": "storage.modifier.tad"
+          }
+        }
+      },
+      {
+        "comment": "Palabras clave de los TADS",
+        "name": "markup.bold.tad",
+        "match": "(?i)(w*(?:EXPORTA|IMPORTA|par[a,á]metros formales|g[e,é]neros|GENERADORES|Observadores B[a,á]sicos|OBSERVADORES|Otras Operaciones|Otras Op|OtrasOp)( |:|\t|\n))"
+      },
+      {
+        "comment": "Palabras clave de los TADS (Extra)",
+        "name": "markup.bold.tad",
+        "match": "((\t|\n)(?:|USA|usa|Usa|GEN|gen|Gen|OBS|obs|Obs):)"
+      },
+      {
+        "comment": "Seccion de Igualdad observacional",
+        "begin": "(?i)(w*(?:Igualdad Observacional|IgObs|Ig Obs)( |:))",
+        "end": "((;))|(?i)(w*(?=EXTIENDE|EXPORTA|IMPORTA|g[e,é]neros|GENERADORES|Observadores B[a,á]sicos|OBSERVADORES|USA|usa|Usa|GEN|gen|Gen|OBS|obs|Obs))",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "endCaptures": {
+          "2": {
+            "name": "comment.line.tad.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#equal_obs_symbol"
+          },
+          {
+            "include": "#iff_symbol"
+          },
+          {
+            "include": "#logic_symbols"
+          }
+        ]
+      },
+      {
+        "comment": "Parte de Axiomas",
+        "begin": "(?i)w*AXIOMAS( |:|\t|\n)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "Fin TAD",
+        "endCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "patterns": [
+          {
+            "name": "string.quoted.double.tad",
+            "match": "\".*?\""
+          },
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#conditionals"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#equal_symbol"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "include": "#function_name_declaration"
+          },
+          {
+            "include": "#restriction_brackets"
+          }
+        ]
+      },
+      {
+        "include": "#function_name_declaration"
+      },
+      {
+        "include": "#restriction_brackets"
+      },
+      {
+        "include": "#design_section_representation"
+      },
+      {
+        "include": "#design_section_informal_solution"
+      },
+      {
+        "include": "#design_section_rep"
+      },
+      {
+        "include": "#design_section_abs"
+      },
+      {
+        "include": "#design_section_main_interface"
+      }
+    ],
+    "repository": {
+      "conditionals": {
+        "comment": "Palabras clave del tipo Bool",
+        "name": "keyword.control.conditional.tad",
+        "match": "(?i)((\t| |\n)(IF|FI|ELSE|ELIF|THEN)(\t| |\n))"
+      },
+      "comment": {
+        "comment": "Comentario del codigo",
+        "name": "comment.line.tad",
+        "match": "//.*$"
+      },
+      "strings": {
+        "comment": "Strings (palabras entre comillas)",
+        "name": "string.quoted.double.tad",
+        "match": "\".*?\""
+      },
+      "functions": {
+        "comment": "Highligting de nombres de funciones varias",
+        "match": "(?:\\(| |\t|\\+|-|)([A-zÀ-ú0-9_?#ñØβπ₀₁₂₃₄₅₆₇₈₉]+?)(?=(\\())",
+        "captures": {
+          "1": {
+            "name": "entity.name.function.tad"
+          }
+        }
+      },
+      "functions_symbols": {
+        "comment": "Simbolos de funciones de los TADs basicos",
+        "name": "entity.name.tad",
+        "match": "(•|◦|\\+|\\-|β|π|≤|≥|&|⊂|⊆|∈|∩|∪|←)"
+      },
+      "logic_symbols": {
+        "comment": "Simbolos de funciones condicionales",
+        "name": "keyword.control.conditional.tad",
+        "match": "(⇒|=>|→)L|(∨L|∧L|∨|∧|¬|((∀|∃|∄).*?:)|∀|∃|∄|⇒|=>|→|⇐|<=|\\|)"
+      },
+      "constants": {
+        "comment": "Constantes",
+        "name": "constant.language.tad",
+        "match": "(?i)(\\b(true|false|none|Ø|nil|[0-9]+?)\\b)"
+      },
+      "constants_aux": {
+        "comment": "Constante <>",
+        "name": "constant.language.tad",
+        "match": "<>"
+      },
+      "arrays": {
+        "comment": "Arrays",
+        "begin": "\\[",
+        "end": "\\]",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.section.brackets.begin.tad"
+          }
+        },
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.section.brackets.end.tad"
+          }
+        },
+        "patterns": [
+          {
+            "comment": "es necesario cuando hay una funcion adentro",
+            "name": "keyword.control.conditional.tad",
+            "match": "\\["
+          },
+          {
+            "include": "#conditionals"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#functions_symbols"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "include": "#loop_keywords"
+          },
+          {
+            "include": "#operation_symbols"
+          },
+          {
+            "include": "#programming_constants"
+          },
+          {
+            "include": "#design_functions"
+          }
+        ]
+      },
+      "cross_symbol": {
+        "comment": "Highligting para signo \"x\"",
+        "name": "variable.language.tad",
+        "match": "(?: |\t)(?:x|×)(?: |\t)"
+      },
+      "right_arrow_symbol": {
+        "comment": "Highligting para signo \"->\"",
+        "name": "variable.language.tad",
+        "match": "((?:->|↦))"
+      },
+      "equal_symbol": {
+        "comment": "Highligting para signo \"=\"",
+        "match": "( |\t|\n)(=|≡|≠)(?=( |\t|\n))",
+        "name": "variable.language.tad"
+      },
+      "iff_symbol": {
+        "comment": "Highligting para signo \"<=>\"",
+        "name": "variable.language.tad",
+        "match": "(?:↔|<=>|<\\->|⇔|⇐⇒)"
+      },
+      "equal_obs_symbol": {
+        "comment": "Highligting para signo \"=obs\"",
+        "match": "( |\t)(=obs)(?=( |\t))",
+        "name": "variable.language.tad"
+      },
+      "tupla_element": {
+        "comment": "Atributos para los tipo Tupla",
+        "match": "(?:\\.|(->))(([A-zÀ-ú0-9_?#₀₁₂₃₄₅₆₇₈₉]+)(?=\\[)|[A-zÀ-ú0-9_?#₀₁₂₃₄₅₆₇₈₉]+)",
+        "captures": {
+          "1": {
+            "name": "keyword.control.tad"
+          },
+          "2": {
+            "name": "variable.language.tad"
+          }
+        }
+      },
+      "function_name_declaration": {
+        "comment": "Aridad de Funciones (Nombre de funcion)",
+        "begin": "(^(?:\t\t))(?!//)([A-zÀ-ú0-9_?#ñØ\\+•·\\-≤ π<>₀₁₂₃₄₅₆₇₈₉]+:)",
+        "beginCaptures": {
+          "0": {
+            "name": "entity.name.function.tad"
+          }
+        },
+        "end": "(?={)|(\n)",
+        "patterns": [
+          {
+            "include": "#cross_symbol"
+          },
+          {
+            "include": "#right_arrow_symbol"
+          }
+        ]
+      },
+      "restriction_brackets": {
+        "comment": "Llaves para restricciones",
+        "begin": "{",
+        "beginCaptures": {
+          "0": {
+            "name": "keyword.control.conditional.tad"
+          }
+        },
+        "end": "(})(\\s*\n)|(}.*?)(?=//)",
+        "endCaptures": {
+          "0": {
+            "name": "keyword.control.conditional.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#equal_symbol"
+          },
+          {
+            "include": "#equal_obs_symbol"
+          },
+          {
+            "include": "#iff_symbol"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "comment": "Llave si hay comentario",
+            "name": "keyword.control.conditional.tad",
+            "match": "}(.*?)(?=//)"
+          }
+        ]
+      },
+      "design_section_representation": {
+        "comment": "Representación (section)",
+        "begin": "(?i)((^|\t)REPRESENTACI[O|Ó|o|ó]N:)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "(---)|^$",
+        "endCaptures": {
+          "1": {
+            "name": "comment.line.tad"
+          },
+          "2": {
+            "name": "comment.line.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "comment": "... se representa con...",
+            "match": "\\s(\\w+)(?:|\\((\\w+)\\)) (se representa con)",
+            "captures": {
+              "1": {
+                "name": "storage.type.tad"
+              },
+              "2": {
+                "name": "storage.type.tad"
+              },
+              "3": {
+                "name": "markup.underline.tad"
+              }
+            }
+          },
+          {
+            "comment": "estr...",
+            "name": "entity.name.type.tad",
+            "match": "estr"
+          },
+          {
+            "comment": "donde...",
+            "name": "markup.underline.tad",
+            "match": "donde"
+          },
+          {
+            "comment": "tupla...",
+            "match": "(?:es\\s)(tupla)",
+            "captures": {
+              "1": {
+                "name": "storage.type.tad"
+              }
+            }
+          },
+          {
+            "comment": "Interior de tupla (con parametro)",
+            "match": "(?:(?:\\s+|⟨)([A-zÀ-ú0-9_?#₀₁₂₃₄₅₆₇₈₉]+))(?::\\s+)(\\w+)\\((\\w+)\\)",
+            "captures": {
+              "1": {
+                "name": "variable.language.tad"
+              },
+              "2": {
+                "name": "storage.type.tad"
+              },
+              "3": {
+                "name": "storage.type.tad"
+              }
+            }
+          },
+          {
+            "comment": "Interior de tupla (arreglo_dimensionable de ...)",
+            "match": "(?:(?:\\s+|⟨)([A-zÀ-ú0-9_?#₀₁₂₃₄₅₆₇₈₉]+))(?::\\s+)(arreglo[_ ]dimensionable|array|arreglo)(?:.*de )(\\w+)",
+            "captures": {
+              "1": {
+                "name": "variable.language.tad"
+              },
+              "2": {
+                "name": "storage.type.tad"
+              },
+              "3": {
+                "name": "storage.type.tad"
+              }
+            }
+          },
+          {
+            "comment": "Interior de tupla (sin parametros)",
+            "match": "(?:(?:\\s+|⟨)([A-zÀ-ú0-9_?#₀₁₂₃₄₅₆₇₈₉]+))(?::\\s+)(\\w+)",
+            "captures": {
+              "1": {
+                "name": "variable.language.tad"
+              },
+              "2": {
+                "name": "storage.type.tad"
+              }
+            }
+          }
+        ]
+      },
+      "design_section_informal_solution": {
+        "comment": "Solucion Informal (section)",
+        "begin": "(?i)((^|\\s+)SOLUCI[O|Ó|o|ó]N INFORMAL:)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "---|^$",
+        "endCaptures": {
+          "0": {
+            "name": "comment.line.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#equal_obs_symbol"
+          },
+          {
+            "include": "#iff_symbol"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#equal_symbol"
+          }
+        ]
+      },
+      "design_section_rep": {
+        "comment": "Invariante de Representación (section)",
+        "begin": "(?i)((^|\\s+)Invariante de Representaci[O|Ó|o|ó]n:)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "---|^$",
+        "endCaptures": {
+          "0": {
+            "name": "comment.line.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#conditionals"
+          },
+          {
+            "comment": "donde...",
+            "name": "markup.underline.tad",
+            "match": "donde"
+          },
+          {
+            "comment": "Aridad de Funciones (Nombre de funcion)",
+            "begin": "[A-zÀ-ú0-9_?#ñØ\\+•·\\-≤ ]+:",
+            "beginCaptures": {
+              "0": {
+                "name": "entity.name.function.tad"
+              }
+            },
+            "end": "(?={)|(\n)",
+            "patterns": [
+              {
+                "include": "#cross_symbol"
+              },
+              {
+                "include": "#right_arrow_symbol"
+              }
+            ]
+          },
+          {
+            "comment": "Macro de extensión númerico",
+            "name": "entity.name.type.tad",
+            "match": "\\([0-9]+\\)"
+          },
+          {
+            "include": "#equal_obs_symbol"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#equal_symbol"
+          },
+          {
+            "include": "#iff_symbol"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "include": "#programming_constants"
+          }
+        ]
+      },
+      "design_section_abs": {
+        "comment": "Función de abstracción (section)",
+        "begin": "(?i)((^|\\s+)Funci[O|Ó|o|ó]n de abstracci[O|Ó|o|ó]n:)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "---|^$",
+        "endCaptures": {
+          "0": {
+            "name": "comment.line.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#conditionals"
+          },
+          {
+            "comment": "donde...",
+            "name": "markup.underline.tad",
+            "match": "donde"
+          },
+          {
+            "comment": "Highligting para signo \"=obs\" (MODIFICADO)",
+            "match": "( |\t)((=obs))(\\s)(.*?:)(.*?|)",
+            "captures": {
+              "2": {
+                "name": "variable.language.tad"
+              }
+            }
+          },
+          {
+            "comment": "Aridad de Funciones (Nombre de funcion)",
+            "begin": "[A-zÀ-ú0-9_?#ñØ\\+•·\\-≤ ]+:",
+            "beginCaptures": {
+              "0": {
+                "name": "entity.name.function.tad"
+              }
+            },
+            "end": "(?={)|(\n)",
+            "patterns": [
+              {
+                "include": "#cross_symbol"
+              },
+              {
+                "include": "#right_arrow_symbol"
+              }
+            ]
+          },
+          {
+            "comment": "Macro de extensión númerico",
+            "name": "entity.name.type.tad",
+            "match": "\\([0-9]+\\)"
+          },
+          {
+            "include": "#equal_obs_symbol"
+          },
+          {
+            "include": "#restriction_brackets"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "include": "#constants"
+          },
+          {
+            "include": "#constants_aux"
+          },
+          {
+            "include": "#arrays"
+          },
+          {
+            "include": "#functions"
+          },
+          {
+            "include": "#equal_symbol"
+          },
+          {
+            "include": "#iff_symbol"
+          },
+          {
+            "include": "#logic_symbols"
+          },
+          {
+            "include": "#tupla_element"
+          },
+          {
+            "include": "#programming_constants"
+          }
+        ]
+      },
+      "design_section_main_interface": {
+        "comment": "Interfaz (section)",
+        "begin": "(?i)((^|\\s+)Interfaz:)",
+        "beginCaptures": {
+          "0": {
+            "name": "markup.bold.tad"
+          }
+        },
+        "end": "^$",
+        "endCaptures": {
+          "0": {
+            "name": "comment.line.tad"
+          }
+        },
+        "patterns": [
+          {
+            "include": "#comment"
+          },
+          {
+            "include": "#strings"
+          },
+          {
+            "comment": "Palabras clave de la Interfaz",
+            "name": "markup.bold.tad",
+            "match": "(?i)(\\s*(?:par[a,á]metros formales|Se explica con|Funci[ó,o]n|Funciones|Operaciones b[á,]sicas|Algoritmos del m[ó,o]dulo|Algoritmos)( |:|\t|\n))"
+          },
+          {
+            "comment": "Generos (linea)",
+            "begin": "(?i)(\\s*(?:g[e,é]neros)( |:|\t|\n))",
+            "beginCaptures": {
+              "0": {
+                "name": "markup.bold.tad"
+              }
+            },
+            "end": "\\n",
+            "endCaptures": {
+              "0": {
+                "name": "comment.line.tad"
+              }
+            }
+          },
+          {
+            "comment": "Se explica con (linea)",
+            "begin": "(?i)(\\s*(?:Se explica con)( |:|\t|\n))",
+            "beginCaptures": {
+              "0": {
+                "name": "markup.bold.tad"
+              }
+            },
+            "end": "\\n",
+            "endCaptures": {
+              "0": {
+                "name": "comment.line.tad"
+              }
+            }
+          },
+          {
+            "comment": "Bloque de implementación de función",
+            "begin": "(?:^\\s+)(((i)|function\\s)[A-zÀ-ú0-9_?#ñØβπ₀₁₂₃₄₅₆₇₈₉•\\=]+?)(?=\\(| \\()",
+            "beginCaptures": {
+              "1": {
+                "name": "entity.name.function.tad"
+              },
+              "2": {
+                "name": "support.function.tad"
+              },
+              "3": {
+                "name": "string.other.tad"
+              }
+            },
+            "end": "(---)|end function|endFunction|endFunc|endfunction",
+            "endCaptures": {
+              "0": {
+                "name": "support.function.tad"
+              },
+              "1": {
+                "name": "comment.line.tad"
+              }
+            },
+            "patterns": [
+              {
+                "include": "#comment"
+              },
+              {
+                "include": "#strings"
+              },
+              {
+                "include": "#design_section_main_interface__function_parameters"
+              },
+              {
+                "include": "#design_section_main_interface__res_function"
+              },
+              {
+                "include": "#conditionals"
+              },
+              {
+                "include": "#loop_keywords"
+              },
+              {
+                "include": "#operation_symbols"
+              },
+              {
+                "include": "#programming_constants"
+              },
+              {
+                "include": "#design_functions"
+              },
+              {
+                "include": "#logic_symbols"
+              },
+              {
+                "include": "#arrays"
+              },
+              {
+                "include": "#constants"
+              },
+              {
+                "include": "#constants_aux"
+              },
+              {
+                "include": "#tupla_element"
+              },
+              {
+                "comment": "Valor \"res\" (para enfasis del resultado)",
+                "name": "entity.name.type.tad",
+                "match": "\\b(res)\\b"
+              }
+            ]
+          },
+          {
+            "comment": "Bloque de interfaz por cada función",
+            "begin": "(?:^\\s+)([A-zÀ-ú0-9_?#ñØβπ₀₁₂₃₄₅₆₇₈₉•\\=]+?)(?=\\(| \\()",
+            "beginCaptures": {
+              "1": {
+                "name": "entity.name.function.tad"
+              }
+            },
+            "end": "---",
+            "endCaptures": {
+              "0": {
+                "name": "comment.line.tad"
+              }
+            },
+            "patterns": [
+              {
+                "include": "#comment"
+              },
+              {
+                "include": "#strings"
+              },
+              {
+                "include": "#design_section_main_interface__function_parameters"
+              },
+              {
+                "include": "#design_section_main_interface__res_function"
+              },
+              {
+                "include": "#equal_symbol"
+              },
+              {
+                "include": "#restriction_brackets"
+              },
+              {
+                "comment": "Palabras clave del bloque de función",
+                "name": "support.function.tad",
+                "match": "(?i)((?=\\s*)(?:complejidad|descripci[ó,o]n|aliasing)((?=\\s)|:))"
+              }
+            ]
+          }
+        ]
+      },
+      "design_section_main_interface__function_parameters": {
+        "comment": "Parametros de función",
+        "match": "(in|out|inout|in/out) (.*?):(.+?(?=,|\\(|\\)))(\\((.+?)(,(.+?)|(?:))\\)|(?:))",
+        "captures": {
+          "1": {
+            "name": "support.function.tad"
+          },
+          "3": {
+            "name": "storage.type.tad"
+          },
+          "5": {
+            "name": "storage.type.tad"
+          },
+          "7": {
+            "name": "storage.type.tad"
+          }
+        }
+      },
+      "design_section_main_interface__res_function": {
+        "comment": "Resultado de función",
+        "match": "\\s(->|↦)(\\sres):(.+?(?=\\n|\\(|\\)))(\\((.+?)(,(.+?)|(?:))\\)|(?:))",
+        "captures": {
+          "1": {
+            "name": "variable.language"
+          },
+          "2": {
+            "name": "entity.name.type.tad"
+          },
+          "3": {
+            "name": "storage.type.tad"
+          },
+          "5": {
+            "name": "storage.type.tad"
+          },
+          "7": {
+            "name": "storage.type.tad"
+          }
+        }
+      },
+      "loop_keywords": {
+        "comment": "Ciclos y control para diseño",
+        "name": "keyword.control.conditional.tad",
+        "match": "(?i)((\\b)(while|do|endWhile|end while|for|end for|endfor|do while|end if|endif|switch|end switch|endswitch|case|break|default|return)(\\b))"
+      },
+      "operation_symbols": {
+        "comment": "Simbolos para la etapa de diseño",
+        "name": "keyword.control.tad",
+        "match": "(•|◦|\\+|\\-|β|π|≤|≥|&|⊂|⊆|∈|∩|∪|←|\\<\\-|\\*|\\-\\>|→|\\<|\\>|≠|\\=|!|\\/|%|\\|)"
+      },
+      "programming_constants": {
+        "comment": "Constantes de la etapa de diseño",
+        "name": "constant.language.tad",
+        "match": "\\b(?i)(null)\\b"
+      },
+      "design_functions": {
+        "comment": "Highligting de funciones varias para diseño",
+        "match": "((?:\\(| |\t|\\+|-|\\.)|(::))([A-zÀ-ú0-9_?#ñØβπ₀₁₂₃₄₅₆₇₈₉]+?)(?=(\\())",
+        "captures": {
+          "2": {
+            "name": "keyword.control.tad"
+          },
+          "3": {
+            "name": "entity.name.function.tad"
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,54 @@
+{
+	"name": "tad-syntax-highlighting",
+	"publisher": "f7olivera",
+	"displayName": "TAD Syntax Highlighting",
+	"description": "Syntax Highlighting para la escritura de TADs (AED2-FCEN-UBA)",
+	"version": "1.0.0",
+	"repository": "https://github.com/f7olivera/tad-syntax-highlighting",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.72.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "tad",
+				"path": "./snippets/snippets.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "tad",
+				"aliases": [
+					"TAD",
+					"tad"
+				],
+				"extensions": [
+					".tad"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "tad",
+				"scopeName": "source.tad",
+				"path": "./syntaxes/tad.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "41f7f173-4920-4523-a59d-665100de1171",
+		"publisherId": "3b6532e9-cc2c-44e2-9085-0db7b2a2aac1",
+		"publisherDisplayName": "f7olivera",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1665867666878,
+		"preRelease": false
+	}
+}
