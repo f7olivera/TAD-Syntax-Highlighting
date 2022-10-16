@@ -3,7 +3,7 @@
 	"publisher": "f7olivera",
 	"displayName": "TAD Syntax Highlighting",
 	"description": "Syntax Highlighting para la escritura de TADs (AED2-FCEN-UBA)",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": "https://github.com/f7olivera/tad-syntax-highlighting",
 	"license": "MIT",
 	"engines": {
@@ -48,7 +48,7 @@
 		"isApplicationScoped": false,
 		"updated": false,
 		"isPreReleaseVersion": false,
-		"installedTimestamp": 1665867666878,
+		"installedTimestamp": 1665880542407,
 		"preRelease": false
 	}
 }
